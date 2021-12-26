@@ -128,14 +128,14 @@ function process_args() {
   fi
 
   # Are we ephemeral or persistent?
-  if [ -z "$STELLAR_MODE" ]; then
-    if [ -f "/opt/stellar/.docker-ephemeral" ]; then
-      STELLAR_MODE="ephemeral"
-    else
-      STELLAR_MODE="persistent"
-    fi
-  fi
-}
+  # if [ -z "$STELLAR_MODE" ]; then
+  #   if [ -f "/opt/stellar/.docker-ephemeral" ]; then
+  #     STELLAR_MODE="ephemeral"
+  #   else
+STELLAR_MODE="persistent"
+#     fi
+#   fi
+# }
 
 function set_pg_password() {
 

@@ -12,3 +12,5 @@ apt-get install -y stellar-core=${STELLAR_CORE_VERSION}
 apt-get install -y stellar-horizon=${HORIZON_VERSION}
 apt-get clean
 echo "\nDone installing stellar-core and horizon...\n"
+
+# pg_ctlcluster 12 main start
